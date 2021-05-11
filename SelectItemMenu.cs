@@ -22,7 +22,7 @@ namespace ConsoleMenuLibrary
 			}
 		}
 
-		public void OnInput(ConsoleKeyInfo input, MenuManager manager)
+		public virtual void OnInput(ConsoleKeyInfo input, MenuManager manager)
 		{
 			switch (input.Key)
 			{
@@ -44,7 +44,7 @@ namespace ConsoleMenuLibrary
 			}
 		}
 
-		public void Display()
+		public virtual void Display()
 		{
 			Console.SetCursorPosition(0, 0);
 			Console.Write("Use Arrow Keys to Navigate! \nPress Esc to close the program!");

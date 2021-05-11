@@ -23,7 +23,7 @@ namespace ConsoleMenuLibrary
 			}
 		}
 
-		public void OnInput(ConsoleKeyInfo input, MenuManager manager)
+		public virtual void OnInput(ConsoleKeyInfo input, MenuManager manager)
 		{
 			//manual text editor stuff wooo
 			//can't wait for this to break horribly
@@ -123,7 +123,7 @@ namespace ConsoleMenuLibrary
 			return true;
 		}
 
-		public void Display()
+		public virtual void Display()
 		{
 			Console.CursorVisible = false;
 			Console.SetCursorPosition(0, 0);
