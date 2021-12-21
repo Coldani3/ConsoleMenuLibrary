@@ -432,5 +432,7 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-bin
-obj
+ConsoleMenuLibrary/bin
+ConsoleMenuLibraryTest/bin
+ConsoleMenuLibrary/obj
+ConsoleMenuLibraryTest/obj
