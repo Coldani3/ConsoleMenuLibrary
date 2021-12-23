@@ -93,7 +93,7 @@ namespace ConsoleMenuLibrary
 				int optionLength = option.Length;
 				int maxLineLength = Console.WindowWidth - this.OptionsListStartX - preOption.Length;
 
-				int newlines = 0;
+				int newlinesForMenuOption = 0;
 				int initNewlineAddition = newlineAddition;
 
 				while (optionLength > maxLineLength)
@@ -102,15 +102,14 @@ namespace ConsoleMenuLibrary
 					option = option.Substring(maxLineLength);
 					optionLength = option.Length;
 					newlineAddition++;
-					newlines++;
-					Console.SetCursorPosition(this.OptionsListStartX + preOption.Length, y + initNewlineAddition + newlines);
+					newlinesForMenuOption++;
+					Console.SetCursorPosition(this.OptionsListStartX + preOption.Length, y + initNewlineAddition + newlinesForMenuOption);
                 }
 
 				Console.Write(option);
 				Console.BackgroundColor = this.DefaultBackgroundColor;
 				Console.ForegroundColor = this.DefaultForegroundColor;
-			}
-			
+			}	
 		}
 
         #region Color builder methods
